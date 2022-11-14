@@ -1,0 +1,36 @@
+<h1 class="text-center">Listado de Paises</h1>
+<hr>
+<div class="row">
+    <div class="col">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <td>Pais</td>
+                    <td>Codigo-Pais</td>
+                    <td>Slug</td>
+                    <td>Nuevo-Confirmados</td>
+                    <td>Total-Confirmados</td>
+                    <td>Nuevos-Muertos</td>
+                    <td>Total-Muertos</td>
+                    <td>Nuevos-Recuperados</td>
+                    <td>Total-Recuperados</td>
+                    <td>Fecha</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let pais of paises">
+                    <td>{{pais.Country}}</td>
+                    <td>{{pais.CountryCode}}</td>
+                    <td>{{pais.Slug}}</td>
+                    <td>{{pais.NewConfirmed}}</td>
+                    <td>{{pais.TotalConfirmed}}</td>
+                    <td>{{pais.NewDeaths}}</td>
+                    <td>{{pais.TotalDeaths}}</td>
+                    <td>{{pais.NewRecovered}}</td>
+                    <td>{{pais.TotalRecovered}}</td>
+                    <td>{{pais.Date}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
